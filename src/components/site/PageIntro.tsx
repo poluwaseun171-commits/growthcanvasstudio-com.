@@ -11,7 +11,7 @@ export function PageIntro({
 }: {
   label: string;
   title: string;
-  accent?: string[];
+  accent?: string[] | undefined;
   children?: ReactNode;
 }) {
   return (

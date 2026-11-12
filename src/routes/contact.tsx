@@ -15,8 +15,8 @@ import { pageHead } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/contact")({
-  validateSearch: (search: Record<string, unknown>): { service?: string } => ({
-    service: typeof search.service === "string" ? search.service : undefined,
+  validateSearch: (search: Record<string, unknown>): { service?: string | undefined } => ({
+    service: typeof search["service"] === "string" ? search["service"] : undefined,
   }),
   head: () =>
     pageHead({
@@ -40,8 +40,8 @@ function Field({
 }: {
   id: string;
   label: string;
-  error?: string;
-  optional?: boolean;
+  error?: string | undefined;
+  optional?: boolean | undefined;
   children: React.ReactNode;
 }) {
   return (

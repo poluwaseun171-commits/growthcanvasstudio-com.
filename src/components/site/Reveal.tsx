@@ -40,7 +40,7 @@ export function StaggerWords({
   className?: string;
   delay?: number;
   /** Words (exact match) that receive the italic serif accent. */
-  accent?: string[];
+  accent?: string[] | undefined;
 }) {
   const reduce = useReducedMotion();
   const words = text.split(" ");

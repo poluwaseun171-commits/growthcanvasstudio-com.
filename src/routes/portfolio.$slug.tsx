@@ -48,7 +48,7 @@ export const Route = createFileRoute("/portfolio/$slug")({
 function CaseStudy() {
   const { project: p } = Route.useLoaderData();
   const idx = projects.findIndex((x) => x.slug === p.slug);
-  const next = projects[(idx + 1) % projects.length];
+  const next = projects[(idx + 1) % projects.length] ?? p;
 
   return (
     <>
