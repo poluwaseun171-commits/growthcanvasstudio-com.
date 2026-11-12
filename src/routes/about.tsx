@@ -63,7 +63,7 @@ function AboutPage() {
           <Reveal className="relative lg:col-span-5">
             <div aria-hidden className="absolute -right-4 -top-4 bottom-12 left-12 border border-bronze/50" />
             <div className="relative aspect-[4/5] overflow-hidden">
-              <FounderPortrait />
+              <FounderPortrait photo={brand.assets.founderPhotoAbout} />
             </div>
             <p className="mt-5 eyebrow text-champagne/50">Precious Akinola — Founder</p>
           </Reveal>

@@ -11,15 +11,17 @@ export function FounderPortrait({
   className,
   tone = "dark",
   priority = false,
+  photo = brand.assets.founderPhoto,
 }: {
   className?: string;
   tone?: "dark" | "light";
   priority?: boolean;
+  photo?: string | null;
 }) {
-  if (brand.assets.founderPhoto) {
+  if (photo) {
     return (
       <img
-        src={brand.assets.founderPhoto}
+        src={photo}
         alt="Precious Akinola, founder of Growth Canvas"
         className={cn("h-full w-full object-cover object-top", className)}
         loading={priority ? "eager" : "lazy"}
