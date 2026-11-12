@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Brand assets, contact channels and copy constants live in `src/content/` (brand.ts, services.ts, projects.ts); placeholders switch to real data by editing those files only. Why: one place to swap in real assets and projects.
+- Contact enquiries are inserted from the browser into `contact_submissions` (anon insert-only RLS, no reads). Why: no auth on the public site; submissions stay private.
+- Shared site UI lives in `src/components/site/`; animations use `motion/react` via `Reveal`/`StaggerWords`, which respect reduced motion. Why: consistent motion language.
