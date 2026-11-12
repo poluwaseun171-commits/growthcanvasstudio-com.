@@ -7,6 +7,7 @@ import { FounderPortrait } from "@/components/site/FounderPortrait";
 import { Logo } from "@/components/site/Logo";
 import { Reveal, StaggerWords } from "@/components/site/Reveal";
 import { SectionLabel } from "@/components/site/SectionLabel";
+import { brand } from "@/content/brand";
 import { ProjectVisual } from "@/components/site/ProjectVisual";
 import { FinalCta } from "@/components/site/FinalCta";
 import { services } from "@/content/services";
@@ -352,7 +353,7 @@ function FounderSpotlight() {
           <Reveal className="relative lg:col-span-5">
             <div aria-hidden className="absolute -bottom-4 -left-4 right-8 top-8 border border-bronze" />
             <div className="relative aspect-[4/5] overflow-hidden">
-              <FounderPortrait tone="light" />
+              <FounderPortrait tone="light" photo={brand.assets.founderPhotoAbout} />
             </div>
           </Reveal>
           <div className="lg:col-span-6 lg:col-start-7">

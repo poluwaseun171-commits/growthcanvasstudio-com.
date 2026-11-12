@@ -11,7 +11,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1400px] px-5 pb-10 pt-20 md:px-10">
         <div className="grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <Logo size="lg" />
+            <div className="inline-block border border-hairline bg-charcoal p-5">
+              <Logo size="lg" />
+            </div>
             <p className="mt-8 max-w-sm font-display text-2xl font-medium leading-snug tracking-tight text-champagne">
               Designed to Grow. <span className="serif-accent">Built to Perform.</span>
             </p>
