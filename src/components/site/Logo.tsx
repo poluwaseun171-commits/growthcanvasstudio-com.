@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
  * brand.assets.logo; otherwise a clearly labelled placeholder.
  */
 export function Logo({ className, size = "md" }: { className?: string; size?: "sm" | "md" | "lg" }) {
-  const height = size === "lg" ? "h-24" : size === "sm" ? "h-10" : "h-14";
+  const height = size === "lg" ? "h-24" : size === "sm" ? "h-12" : "h-16";
   if (brand.assets.logo) {
     return (
       <img
