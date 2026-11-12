@@ -29,7 +29,7 @@ export function Logo({ className, size = "md" }: { className?: string; size?: "s
       <span className="font-display text-[0.8rem] font-bold tracking-[0.22em] text-champagne">
         GROWTH CANVAS
       </span>
-      <span className="eyebrow !text-[0.55rem] !tracking-[0.18em] text-bronze">Logo</span>
+      <span className="eyebrow text-[0.55rem]! tracking-[0.18em]! text-bronze">Logo</span>
     </span>
   );
 }

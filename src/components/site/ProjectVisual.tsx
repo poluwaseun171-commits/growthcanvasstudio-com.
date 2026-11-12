@@ -44,7 +44,7 @@ export function ProjectVisual({ project, className }: { project: Project; classN
           </div>
         </div>
       </div>
-      <span className="eyebrow absolute left-4 top-4 border border-dashed border-bronze/50 px-2 py-1 !text-[0.6rem] text-bronze">
+      <span className="eyebrow absolute left-4 top-4 border border-dashed border-bronze/50 px-2 py-1 text-[0.6rem]! text-bronze">
         Placeholder — add project image
       </span>
     </div>
