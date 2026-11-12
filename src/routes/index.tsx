@@ -7,6 +7,7 @@ import { FounderPortrait } from "@/components/site/FounderPortrait";
 import { Logo } from "@/components/site/Logo";
 import { Reveal, StaggerWords } from "@/components/site/Reveal";
 import { SectionLabel } from "@/components/site/SectionLabel";
+import { brand } from "@/content/brand";
 import { ProjectVisual } from "@/components/site/ProjectVisual";
 import { FinalCta } from "@/components/site/FinalCta";
 import { services } from "@/content/services";

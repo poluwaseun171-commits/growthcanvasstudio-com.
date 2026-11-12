@@ -6,6 +6,7 @@ import { FounderPortrait } from "@/components/site/FounderPortrait";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionLabel } from "@/components/site/SectionLabel";
 import { FinalCta } from "@/components/site/FinalCta";
+import { brand } from "@/content/brand";
 import { processSteps } from "@/content/process";
 import { jsonLd, pageHead, personSchema } from "@/lib/seo";
 
