@@ -28,10 +28,10 @@ export const brand = {
     logo: logoAsset.url,
   },
   contact: {
-    email: "", // e.g. hello@yourdomain.com
-    whatsapp: "", // full international number, digits only, e.g. 2348000000000
-    linkedin: "", // full profile URL
-    instagram: "", // full profile URL
+    emails: ["akinolaprecious955@gmail.com", "hello.growthcanvas@gmail.com"],
+    whatsapp: "2349011978735", // full international number, digits only
+    whatsappDisplay: "+234 901 197 8735",
+    linkedin: "https://www.linkedin.com/in/precious-akinola-growthcanvas/",
   },
 };
 
