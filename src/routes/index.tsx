@@ -301,32 +301,21 @@ function FeaturedWork() {
           </Reveal>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-12">
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
           {featured.map((p, i) => (
-            <Reveal
-              key={p.slug}
-              delay={i * 0.1}
-              className={
-                i === 0
-                  ? "md:col-span-7"
-                  : i === 1
-                    ? "md:col-span-5 md:mt-24"
-                    : "md:col-span-6 md:col-start-4"
-              }
-            >
+            <Reveal key={p.slug} delay={i * 0.1} className={i === 1 ? "md:mt-20" : undefined}>
               <Link to="/portfolio/$slug" params={{ slug: p.slug }} className="group block">
-                <div className={`overflow-hidden ${i === 1 ? "aspect-[4/5]" : "aspect-[16/11]"}`}>
+                <div className="aspect-square overflow-hidden border border-hairline">
                   <ProjectVisual project={p} />
                 </div>
                 <div className="mt-5 flex items-start justify-between gap-4">
                   <div>
                     <p className="eyebrow text-bronze">
-                      {p.category}
-                      {p.placeholder ? " · Placeholder" : ""}
+                      {p.category} · {p.platform}
                     </p>
                     <h3 className="mt-2 font-display text-2xl font-semibold text-champagne">{p.title}</h3>
                   </div>
-                  <ArrowUpRight className="mt-1 size-5 text-champagne/60 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-bronze" />
+                  <ArrowUpRight className="mt-1 size-5 shrink-0 text-champagne/60 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-bronze" />
                 </div>
               </Link>
             </Reveal>

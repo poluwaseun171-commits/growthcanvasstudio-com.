@@ -27,8 +27,8 @@ function PortfolioPage() {
   return (
     <>
       <PageIntro label="Portfolio" title="Ideas Brought to Life." accent={["Life."]}>
-        Completed client projects, each with the brief, the approach and the result. Select a project
-        to read the full case study.
+        Shopify stores, websites and sales funnels designed and built by Growth Canvas. Select a
+        project to see the brief, the approach and everything that was built.
       </PageIntro>
 
       <section className="py-16 md:py-24" aria-label="Projects">
@@ -65,14 +65,13 @@ function PortfolioPage() {
                   className={cn(i % 2 === 1 && "md:mt-28")}
                 >
                   <Link to="/portfolio/$slug" params={{ slug: p.slug }} className="group block">
-                    <div className="aspect-[4/3] overflow-hidden">
+                    <div className="aspect-square overflow-hidden border border-hairline">
                       <ProjectVisual project={p} />
                     </div>
                     <div className="mt-6 flex items-start justify-between gap-6 border-b border-hairline pb-6">
                       <div>
                         <p className="eyebrow text-bronze">
-                          {p.category} · {p.year}
-                          {p.placeholder ? " · Placeholder" : ""}
+                          {p.type} · {p.platform}
                         </p>
                         <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-champagne">
                           {p.title}
