@@ -303,7 +303,7 @@ function FeaturedWork() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {featured.map((p, i) => (
-            <Reveal key={p.slug} delay={i * 0.1} className={i === 1 ? "md:mt-20" : undefined}>
+            <Reveal key={p.slug} delay={i * 0.1} className={i === 1 ? "md:mt-20" : ""}>
               <Link to="/portfolio/$slug" params={{ slug: p.slug }} className="group block">
                 <div className="aspect-square overflow-hidden border border-hairline">
                   <ProjectVisual project={p} />
