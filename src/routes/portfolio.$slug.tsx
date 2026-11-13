@@ -150,13 +150,11 @@ function CaseStudy() {
           </Reveal>
           <ol className="divide-y divide-border border-y border-border lg:col-span-8">
             {p.features.map((f, i) => (
-              <Reveal key={f} delay={Math.min(i * 0.04, 0.3)}>
-                <li className="flex gap-6 py-5">
-                  <span className="eyebrow w-8 shrink-0 pt-1 text-bronze">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-champagne/80">{f}</span>
-                </li>
+              <Reveal as="li" key={f} delay={Math.min(i * 0.04, 0.3)} className="flex gap-6 py-5">
+                <span className="eyebrow w-8 shrink-0 pt-1 text-bronze">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-champagne/80">{f}</span>
               </Reveal>
             ))}
           </ol>

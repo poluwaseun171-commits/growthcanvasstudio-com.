@@ -33,13 +33,16 @@ function TestimonialsPage() {
             {testimonials.map((t, i) => {
               const project = t.projectSlug ? getProject(t.projectSlug) : undefined;
               return (
-                <Reveal key={i} delay={i * 0.08} className={cn(i % 3 === 1 && "lg:mt-16")}>
-                  <li
-                    className={cn(
-                      "relative flex h-full flex-col border bg-charcoal-soft p-8 md:p-10",
-                      t.placeholder ? "border-dashed border-bronze/50" : "border-hairline",
-                    )}
-                  >
+                <Reveal
+                  as="li"
+                  key={i}
+                  delay={i * 0.08}
+                  className={cn(
+                    "relative flex h-full flex-col border bg-charcoal-soft p-8 md:p-10",
+                    i % 3 === 1 && "lg:mt-16",
+                    t.placeholder ? "border-dashed border-bronze/50" : "border-hairline",
+                  )}
+                >
                     {t.placeholder ? (
                       <span className="eyebrow absolute right-4 top-4 text-[0.6rem]! text-bronze">
                         Placeholder
@@ -69,7 +72,6 @@ function TestimonialsPage() {
                         </Link>
                       ) : null}
                     </div>
-                  </li>
                 </Reveal>
               );
             })}
