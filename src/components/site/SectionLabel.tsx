@@ -5,9 +5,9 @@ export function SectionLabel({
   label,
   className,
 }: {
-  number?: string;
+  number?: string | undefined;
   label: string;
-  className?: string;
+  className?: string | undefined;
 }) {
   return (
     <p className={cn("eyebrow flex items-center gap-3 text-bronze", className)}>
