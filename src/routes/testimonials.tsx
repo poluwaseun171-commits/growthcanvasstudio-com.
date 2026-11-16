@@ -7,7 +7,6 @@ import { FinalCta } from "@/components/site/FinalCta";
 import { SampleTestimonialsNotice, TestimonialCard } from "@/components/site/TestimonialCard";
 import { hasSampleTestimonials, testimonials } from "@/content/testimonials";
 import { pageHead } from "@/lib/seo";
-import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/testimonials")({
   head: () => {
@@ -49,7 +48,6 @@ function TestimonialsPage() {
                 as="li"
                 key={`${t.name}-${i}`}
                 delay={(i % 3) * 0.08}
-                className={cn(i % 3 === 1 && "lg:mt-16")}
               >
                 <TestimonialCard testimonial={t} />
               </Reveal>

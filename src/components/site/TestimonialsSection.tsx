@@ -99,7 +99,7 @@ export function TestimonialsSection({
             onKeyDown={onKeyDown}
             className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
           >
-            <div ref={viewportRef} className="-my-4 overflow-hidden py-4">
+            <div ref={viewportRef} className="-m-1 overflow-hidden p-1 py-5 -my-5">
               <ul className="-ml-6 flex touch-pan-y">
                 {testimonials.map((t, i) => (
                   <li
