@@ -10,6 +10,7 @@ import { SectionLabel } from "@/components/site/SectionLabel";
 import { brand } from "@/content/brand";
 import { ProjectVisual } from "@/components/site/ProjectVisual";
 import { FinalCta } from "@/components/site/FinalCta";
+import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { services } from "@/content/services";
 import { projects } from "@/content/projects";
 import { processSteps } from "@/content/process";
@@ -39,7 +40,8 @@ function HomePage() {
       <FeaturedWork />
       <FounderSpotlight />
       <Process />
-      <FinalCta />
+      <TestimonialsSection number="06" />
+      <FinalCta number="07" />
     </>
   );
 }
