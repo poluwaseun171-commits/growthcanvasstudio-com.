@@ -37,7 +37,7 @@ export function ContactChannels({ className, compact = false }: { className?: st
       key: "linkedin",
       label: "LinkedIn",
       icon: Linkedin,
-      value: brand.contact.linkedin,
+      value: brand.contact.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""),
       href: brand.contact.linkedin,
       external: true,
     },
@@ -51,10 +51,10 @@ export function ContactChannels({ className, compact = false }: { className?: st
             href={href}
             target={external ? "_blank" : undefined}
             rel={external ? "noreferrer" : undefined}
-            className="group flex items-center gap-3 text-sm hover:text-bronze"
+            className="group flex min-w-0 items-center gap-3 text-sm hover:text-bronze"
           >
             <Icon className="size-4 shrink-0 text-bronze" aria-hidden />
-            <span className="link-underline">{compact ? value : `${label} — ${value}`}</span>
+            <span className="link-underline min-w-0 [overflow-wrap:anywhere]">{compact ? value : `${label} — ${value}`}</span>
           </a>
         </li>
       ))}

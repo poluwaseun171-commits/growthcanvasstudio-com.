@@ -107,6 +107,7 @@
   --ring: var(--bronze);
 
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-card: 0 24px 60px -40px oklch(0 0 0 / 80%);
   --gradient-hero: radial-gradient(
     120% 90% at 85% 10%,
     oklch(0.632 0.083 57.3 / 16%) 0%,
