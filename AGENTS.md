@@ -33,3 +33,4 @@ use the editor.
 - Brand assets, contact channels and copy constants live in `src/content/` (brand.ts, services.ts, projects.ts); placeholders switch to real data by editing those files only. Why: one place to swap in real assets and projects.
 - Contact enquiries are inserted from the browser into `contact_submissions` (anon insert-only RLS, no reads). Why: no auth on the public site; submissions stay private.
 - Shared site UI lives in `src/components/site/`; animations use `motion/react` via `Reveal`/`StaggerWords`, which respect reduced motion. Why: consistent motion language.
+- Testimonials live in `src/content/testimonials.ts`; any entry with `sample: true` triggers visible "Sample" labels and noindex on /testimonials. Why: fictional preview reviews must never pass as genuine endorsements.
