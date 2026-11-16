@@ -25,7 +25,7 @@ export function TestimonialCard({
   return (
     <figure
       className={cn(
-        "group relative flex h-full flex-col overflow-hidden rounded-md border border-hairline bg-charcoal-soft p-8 shadow-[0_24px_60px_-40px_oklch(0_0_0/0.8)] transition-[transform,border-color,box-shadow] duration-700 ease-[var(--ease-luxe)] md:p-10 motion-safe:md:hover:-translate-y-1.5 md:hover:border-bronze/40",
+        "group relative flex h-full flex-col overflow-hidden rounded-md border border-hairline bg-charcoal-soft p-8 shadow-[var(--shadow-card)] transition-[transform,border-color,box-shadow] duration-700 ease-[var(--ease-luxe)] md:p-10 motion-safe:md:hover:-translate-y-1.5 md:hover:border-bronze/40",
         className,
       )}
     >
